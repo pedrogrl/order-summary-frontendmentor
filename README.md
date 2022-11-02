@@ -4,7 +4,7 @@ This is a solution to the [Order summary component](https://www.frontendmentor.i
 
 ### Links
 
-- Solution URL: [here]()
+- Solution URL: [here](https://www.frontendmentor.io/solutions/order-summary-component-htmlcss-sass-h4CJlVdpbL)
 - Live Site URL: [here](https://pedrogrl.github.io/order-summary-frontendmentor/)
 
 ## Author
