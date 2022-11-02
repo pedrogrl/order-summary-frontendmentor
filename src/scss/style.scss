@@ -156,11 +156,13 @@ body{
 
         background-color: hsl(245, 75%, 52%);
         color: white;
-        transition: background-color 0.15s;
+        transition: all 0.15s;
+        box-shadow: 2px 12px 15px hsla(245, 75%, 52%, 0.314);
         &:hover{
           background-color: lighten($color: hsl(245, 75%, 52%), $amount: 14);
           cursor: pointer;
-          transition: background-color 0.15s;
+          transition: all 0.15s;
+          box-shadow: 2px 6px 15px hsla(245, 75%, 52%, 0.314);
         }
       }
 
