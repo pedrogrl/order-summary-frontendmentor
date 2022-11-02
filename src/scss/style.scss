@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  main.card{
+    @media (max-width: 435px){
+      max-width: 90%;
+      max-height: 85vh;
+    }
+    
+    max-width: 26rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+
+    background-color: white;
+
+    section.img{
+      img{
+        width: 100%;
+      }
+    }
+
+    section.text{
+      @media (max-width: 435px){
+        padding: 2rem 1.5rem;
+      }
+
+      padding: 2rem 3rem;
+      display: flex;
+      flex-direction: column;
+
+      div.info{
+        text-align: center;       
+        h1{
+          @media (max-width: 435px){
+            font-size: 1.4rem;
+          }
+
+          font-weight: 900;
+          font-size: 1.8rem;
+          color: hsl(223, 47%, 23%);
+          margin-bottom: 1rem;
+        }
+        p{
+          @media (max-width: 435px){
+            font-size: .919rem;
+            letter-spacing: .9px;
+          }
+
+          color: hsl(224, 23%, 55%);
+          margin-bottom: 1.3rem;
+          line-height: 1.5rem;
+        }
+      }
+
+      div.plan{
+        @media (max-width: 435px){
+          padding: .8rem;
+        }
+
+        display: flex;
+        align-items: center;
+        padding: 1.4rem;
+        border-radius: 10px;
+        background-color: hsl(225, 100%, 98%);
+
+        div.plan-icon{
+          margin-right: 1.2rem;
+        }
+
+        div.plan-text{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          div.plan-info{
+            @media (max-width: 435px){
+              line-height: 1.5rem;
+            }
+
+            line-height: 1.7rem;
+
+            h3{
+              @media (max-width: 435px){
+                font-size: .93rem;
+                font-weight: 900;
+              }
+
+              color: hsl(223, 47%, 23%);
+            }
+            span{
+              @media (max-width: 435px){
+                font-size: .9rem;
+              }
+
+              color: hsl(224, 23%, 55%);
+            }
+          }
+
+          div.plan-button{
+            a{
+              @media (max-width: 435px){
+                font-size: .8rem;
+              }
+
+              color: hsl(245, 75%, 52%);
+              font-weight: 900;
+              font-size: .9rem;
+              
+              padding: 0.5rem 0;
+              &:hover{
+                text-decoration: none;
+                color: lighten($color: hsl(245, 75%, 52%), $amount: 14);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    section.buttons{
+      @media (max-width: 435px){
+        padding: 0 1.5rem;
+      }
+
+      padding: 0 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      button{
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 10px;
+
+        font-size: .95rem;
+        font-weight: 900;
+
+        background-color: hsl(245, 75%, 52%);
+        color: white;
+        transition: background-color 0.15s;
+        &:hover{
+          background-color: lighten($color: hsl(245, 75%, 52%), $amount: 14);
+          cursor: pointer;
+          transition: background-color 0.15s;
+        }
+      }
+
+      a{
+        margin: 1rem 0 2.5rem 0;
+        padding: 0.5rem;
+        text-decoration: none;
+        color: hsl(224, 23%, 55%);
+        font-weight: 900;
+        transition: color 0.15s;
+        &:hover{
+          color: hsl(223, 47%, 23%);
+          transition: color 0.15s;
+        }
+      }
+    }
+  }
+}
